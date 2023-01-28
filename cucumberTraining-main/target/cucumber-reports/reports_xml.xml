@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="25.112" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="Successfull login with credentials" time="10.658">
+<system-out><![CDATA[
+Given User launch Chrome Browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User Enters Email as "admin@yourstore.com" and password as "admin"......passed
+And Click on login button...................................................passed
+Then the page tittle is "Dashboard / nopCommerce administration"............passed
+When User clicks on logout..................................................passed
+Then the page tittle is "Your store. login".................................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successfull login with credentials - Example #1.1" time="10.074">
+<system-out><![CDATA[
+Given User launch Chrome Browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User Enters Email as "admin@yourstore.com" and password as "admin"......passed
+And Click on login button...................................................passed
+Then the page tittle is "Dashboard / nopCommerce administration"............passed
+When User clicks on logout..................................................passed
+Then the page tittle is "Your store. login".................................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successfull login with credentials - Example #1.2" time="4.138">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href='/logout']&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [005f8ec3086141158d68b8b0cdb6b767, findElement {using=xpath, value=//a[@href='/logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61814/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 005f8ec3086141158d68b8b0cdb6b767">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/logout']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [005f8ec3086141158d68b8b0cdb6b767, findElement {using=xpath, value=//a[@href='/logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61814/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 005f8ec3086141158d68b8b0cdb6b767
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageObject.loginPage.clickOnLogoutButton(loginPage.java:42)
+	at StepDefination.stepdefination.user_clicks_on_logout(stepdefination.java:52)
+	at ✽.User clicks on logout(file:///C:/Users/Akhil%20Dhasmana/eclipse-workspace/Cucumber007/./Features/Loginfeature.feature:23)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launch Chrome Browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User Enters Email as "admin@yourstore.com" and password as "test".......passed
+And Click on login button...................................................passed
+Then the page tittle is "Dashboard / nopCommerce administration"............passed
+When User clicks on logout..................................................failed
+Then the page tittle is "Your store. login".................................skipped
+And Close browser...........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
